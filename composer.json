@@ -4,7 +4,7 @@
     "homepage": "https://github.com/pawella/svn-tool",
     "version": "0.0.1",
     "type": "library",
-    "license": "GPL",
+    "license": "GPL-3.0-or-later",
     "keywords": [
         "zf2",
         "svn",
