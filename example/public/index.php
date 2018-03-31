@@ -1,10 +1,9 @@
 <?php
 
-require __DIR__.'/../../vendor/autoload.php';
+require __DIR__ . '/../../vendor/autoload.php';
 
 use SvnTool\Service;
 use Zend\Cache\StorageFactory;
-
 
 $service = new Service();
 
@@ -13,10 +12,10 @@ $service = new Service();
  */
 $cache = StorageFactory::factory([
     'adapter' => [
-        'name'    => 'Filesystem',
+        'name' => 'Filesystem',
         'options' => [
             'ttl' => 60,
-            'cache_dir' => __DIR__.'/../cache'
+            'cache_dir' => __DIR__ . '/../cache'
         ],
     ],
     'plugins' => [
@@ -29,8 +28,9 @@ $service->setCache($cache);
 
 $service->setRepositories([
     'https://userByRepo:password@svn.example.com/svn/repository',
-    'https://userByRepo:password@svn.otherhost.com/repository'
+    'https://userByRepo:password@svn.otherhost.com/repository',
 ]);
+
 
 $service->responseJsonPackage();
 
