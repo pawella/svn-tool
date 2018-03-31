@@ -1,6 +1,7 @@
 {
     "name": "pawella/svn-tool",
     "description": "Svn tool by integrate composer",
+    "homepage": "https://github.com/pawella/svn-tool",
     "type": "library",
     "license": "GPL",
     "keywords": [
