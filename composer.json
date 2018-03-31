@@ -1,0 +1,29 @@
+{
+    "name": "pawella/svn-tool",
+    "description": "Svn tool by integrate composer",
+    "type": "library",
+    "license": "GPL",
+    "keywords": [
+        "zf2",
+        "svn",
+        "composer",
+        "packages"
+    ],
+    "authors": [
+        {
+            "name": "pawel",
+            "email": "pawel.wolanski@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "zendframework/zend-cache": "2.*",
+        "zendframework/zend-serializer": "2.*"
+
+    },
+    "autoload": {
+        "psr-0": {
+            "SvnTool\\": "src/"
+        }
+    }
+}
