@@ -1,30 +1,21 @@
-# Svn Tolls by comopser
+# Svn Tools by comopser
 
-Odczytuje repository subversion z projektami composer tworząc plik packages
+Read subversion repository and created packages.json file by composer usage
 
 ## Getting Started
 
-I will write about it one day
+Provides a service site that scans your external, private [SVN](https://subversion.apache.org/) repository, preparing a package.json file that will be used by [composer](https://getcomposer.org).
 
 ### Installing
 
-I will write about it one day
+Add a library to your project.
 
 ```
-Give the example
+composer require pawella/svn-tool
 ```
 
-And repeat
+### Sample application
 
-```
-until finished
-```
-
-
-
-### Przykładowe zastosowanie
-
-Explain what these tests test and why
 
 ```php
 <?php
