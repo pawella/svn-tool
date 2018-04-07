@@ -96,7 +96,8 @@ class Service
             'source' => [
                 'type' => 'svn',
                 'url' => $repositoryUrl,
-                'reference' => $referencePath . '/@' . $response->getRevisionNumber()
+                'reference' => $referencePath . '/@' . $response->getRevisionNumber(),
+                'svn-cache-credentials' => false
             ]
         ];
 
